@@ -6,9 +6,9 @@ public class RoomKey : MonoBehaviour
 {
     public Inventory inv;
     public GameObject notice;
-    public GameObject Door;
     public GameObject image;
     public GameObject timer;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +29,10 @@ public class RoomKey : MonoBehaviour
             {
                 inv.Get1();
                 Destroy(gameObject);
-                Destroy(Door.gameObject);
                 notice.SetActive(false);
                 image.SetActive(true);
                 timer.SetActive(true);
+                anim.SetBool("item1", true);
             }
         }
     }

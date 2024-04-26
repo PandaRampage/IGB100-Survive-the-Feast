@@ -97,5 +97,12 @@ namespace LowPolyWater
             mesh.MarkDynamic();
             meshFilter.mesh = mesh;
         }
+        private void OnTriggerEnter(Collider collision)
+        {
+            if(collision.GetComponent<Move>())
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            }
+        }
     }
 }

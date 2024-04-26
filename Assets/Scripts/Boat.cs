@@ -6,6 +6,7 @@ public class Boat : MonoBehaviour
 {
     public Inventory inv;
     public GameObject noticeEs;
+    public GameObject partiBoat;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,19 +16,19 @@ public class Boat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(inv.item3 == true)
+        {
+            partiBoat.SetActive(true);
+        }
     }
     private void OnTriggerStay(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Move>() && inv.item3 == true)
         {
-            if(inv.item3 == true)
+            noticeEs.SetActive(true);
+            if(Input.GetKey(KeyCode.Mouse0))
             {
-                noticeEs.SetActive(true);
-                if(Input.GetKey(KeyCode.Mouse0))
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-                }
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
             }
         }
     }
