@@ -23,7 +23,7 @@ public class Pitchfork : MonoBehaviour
         if(collision.GetComponent<Move>())
         {
             notice.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.Mouse0))
+            if(Input.GetKey(KeyCode.Mouse0))
             {
                 inv.Get2();
                 Destroy(gameObject);

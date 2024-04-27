@@ -25,7 +25,7 @@ public class DockKey : MonoBehaviour
             if(inv.item2 == true)
             {
                 notice.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.Mouse0))
+                if(Input.GetKey(KeyCode.Mouse0))
                 {
                     inv.Get3();
                     Destroy(gameObject);
