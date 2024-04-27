@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         Cursor.lockState = CursorLockMode.None;
     }

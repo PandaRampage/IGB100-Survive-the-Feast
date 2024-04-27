@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: e5716cc2cb5c2c5cab23f6d92733fdb4, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: c523807be740e61ae825208a3e389f2a, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2edd3b1cbe05a10568e274bd1ceb00e5, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 1b87492efe46c0e9284d0cc4257c3c35, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1375,14 +1375,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6828348858486247473, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1503426272}
-    - target: {fileID: 6828348858486247473, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
-      propertyPath: mouseSensitivity
-      value: 500
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4708843652005238006, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
     m_RemovedGameObjects: []
@@ -1391,6 +1383,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3562573201191281080, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1509954588}
+    - targetCorrespondingSourceObject: {fileID: 1484633575826395592, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1730130961}
   m_SourcePrefab: {fileID: 100100000, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
 --- !u!1 &864375139
 GameObject:
@@ -6829,7 +6824,7 @@ Transform:
   m_GameObject: {fileID: 1122963581}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.50069, y: 4.8, z: 26.908451}
+  m_LocalPosition: {x: 49.50069, y: 4.2, z: 26.908451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7119,7 +7114,7 @@ Transform:
   m_GameObject: {fileID: 1216510477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12260,7 +12255,7 @@ Transform:
   m_GameObject: {fileID: 1574511405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.50069, y: 4.456652, z: 26.908451}
+  m_LocalPosition: {x: 49.50069, y: 4.4, z: 26.908451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17295,6 +17290,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c60953bcb42d94305b9e95b7f7f3d972, type: 3}
+--- !u!1 &1730130956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1484633575826395592, guid: 73d4d6176c69f84e2b97880ec32e1564, type: 3}
+  m_PrefabInstance: {fileID: 863792265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1730130961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730130956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a2829e240bb6245a9177bfd0286cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 350
+  player: {fileID: 1503426272}
+  XRotation: 1
 --- !u!4 &1731307947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1948089903558696190, guid: a79f26c2c26a872468e9cc5925298ae7, type: 3}
