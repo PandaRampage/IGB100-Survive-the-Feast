@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boat : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class Boat : MonoBehaviour
             noticeEs.SetActive(true);
             if(Input.GetKey(KeyCode.Mouse0))
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
             }
         }
     }
