@@ -22,7 +22,7 @@ public class RoomKey : MonoBehaviour
     }
     private void OnTriggerStay(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Player>())
         {
             notice.SetActive(true);
             if(Input.GetKey(KeyCode.Mouse0))
@@ -38,7 +38,7 @@ public class RoomKey : MonoBehaviour
     }
     private void OnTriggerExit(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Player>())
         {      
             notice.SetActive(false);
         }  

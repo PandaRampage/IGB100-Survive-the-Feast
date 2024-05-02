@@ -24,18 +24,18 @@ public class Boat : MonoBehaviour
     }
     private void OnTriggerStay(Collider collision)
     {
-        if(collision.GetComponent<Move>() && inv.item3 == true)
+        if(collision.GetComponent<Player>() && inv.item3 == true)
         {
             noticeEs.SetActive(true);
             if(Input.GetKey(KeyCode.Mouse0))
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
             }
         }
     }
     private void OnTriggerExit(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Player>())
         {      
             noticeEs.SetActive(false);
         }  
